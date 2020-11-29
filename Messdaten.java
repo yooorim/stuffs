@@ -21,7 +21,7 @@ public class Messdaten {
 
     while (sc.hasNextLine()) {
       line = sc.nextLine();
-      line = line.trim();
+      line = line.replaceAll("\\s+"," ").trim();
       array = line.split(" ");
 
       double tem = Double.valueOf(array[4]);
